@@ -16,20 +16,27 @@ let pixel = function(r, g, b){
 pixel.prototype.shortify = function(){
 	// returns a three digit HEX(!) number for color
 	// r, g, b -> #2
+	return 0xf4e;
 }
 
 let WIDTH = 680, HEIGHT = 420;
 
 
 /**
-* @parameters: width and height of image
-*	@returns: 
-*
-*
-*
-*
+* @parameters: width and height of desired image
+*	@returns: array of arrays of PIXEL objects
 *
 */
 let init = function(w, h){
-
+	let img = [[{}]];
+	for(; h > -1; h--){
+		for(; w > -1; w--){
+			console.log(`-${h}--${w}-`);
+		}
+	}
 }
+
+
+init(22, 45);
+
+
