@@ -28,15 +28,20 @@ let WIDTH = 680, HEIGHT = 420;
 *
 */
 let init = function(w, h){
-	let img = [[{}]];
+	let img = [], tri = {}, row =[];
 	for(; h > -1; h--){
 		for(; w > -1; w--){
-			console.log(`-${h}--${w}-`);
+			tri = {red: 101, green: 100, blue: 99};
+			row.unshift(4444); 
+			console.log(`-rowlength is-${row.length}-`);
 		}
+		img.unshift(row.splice(0));
+		// vomits row into the growing image
 	}
+	return img[0][0]; // should be an int for now TODO !
 }
 
 
-init(22, 45);
+console.log(init(22, 45));
 
 
