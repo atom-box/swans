@@ -5,7 +5,7 @@
 	<style type="text/css">
 body{
     margin:0;
-    overflow:hidden;
+    xoverflow:hidden;
     font-size:20px;
     line-height:36px;
     background:#96a8c8
@@ -16,7 +16,9 @@ body{
     border-width:1.5px;
     border-color:#071419;
     border-radius:12px;
-    box-sizing:border-box
+    box-sizing:border-box;
+    margin:1.5rem 1.2rem;
+    overflow:auto
 }
 .xkcd-box-title{
     font-family:Lucida,Helvetica,sans-serif;
@@ -34,8 +36,7 @@ body{
     margin-bottom:0
 }
 #masthead{
-    margin:1.5rem 1.2rem;
-    overflow:auto
+
 }
 #masthead img{
     float:left;
@@ -132,13 +133,13 @@ body{
         <h1 class="xkcd-box-titlemain">Pixel Shifter</h1>
         <h3 class="xkcd-box-title">Check out the <a href="https://en.wikipedia.org/wiki/BMP_file_format#Example_2">existing pixels </a> and <a href="https://en.wikipedia.org/wiki/Huffman_coding">muck them up a bit</a></h3>
     </div>
-    <div id="editor-wrapper" class="xkcd-box">
-        <h2 class="xkcd-box-title">Enlarged view; not real</h2>
-        <p>32pixel by 32pixel<img src="32x32.png"></p>        
-        <p>2pixel by 2pixel<img src="2x2.png"></p>        
+    <div id="xeditor-wrapper" class="xkcd-box">
         <h2 class="xkcd-box-title">Actual bitmaps</h2>
         <p>32pixel by 32pixel :<img src="blue32.bmp">:</p>        
         <p>2pixel by 2pixel :<img src="a.bmp">:</p>                
+        <h2 class="xkcd-box-title">Enlarged view; not real</h2>
+        <p>32pixel by 32pixel<img src="32x32.png"></p>        
+        <p>2pixel by 2pixel<img src="2x2.png"></p>        
     		<div id="editor"></div>
     </div>
 
